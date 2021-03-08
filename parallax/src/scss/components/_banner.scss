@@ -1,11 +1,9 @@
 .banner {
-  width: 100%;
-  height: 100vh;
+  @include WHSize();
   overflow: hidden;
   position: relative;
   .background-image-bridge {
-    width: 100%;
-    height: 100vh;
+    @include WHSize();
     position: absolute;
     background: url("./../assets/goldent_gate.jpg") no-repeat;
     background-size: cover;
