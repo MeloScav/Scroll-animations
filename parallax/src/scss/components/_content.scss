@@ -1,0 +1,14 @@
+.content {
+  margin: 0 auto;
+  width: 80%;
+  padding: calculateRem(80) 0;
+  h1 {
+    font-size: calculateRem(32);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    line-height: calculateRem(24);
+    text-align: justify;
+  }
+}
