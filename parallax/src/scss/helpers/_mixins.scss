@@ -1,4 +1,4 @@
-@mixin WHSize($with: 100%, $height: 100%) {
+@mixin WHSize($with: 100%, $height: 100vh) {
   width: $with;
   height: $height;
 }
