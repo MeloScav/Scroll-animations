@@ -1,3 +1,7 @@
+@import "./helpers/functions";
 @import "./helpers/mixins.scss";
+
 @import "./global/common";
+
 @import "./components/banner";
+@import "./components/content";
