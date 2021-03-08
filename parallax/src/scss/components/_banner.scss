@@ -1,7 +1,7 @@
 .banner {
+  position: relative;
   @include WHSize();
   overflow: hidden;
-  position: relative;
   .background-image-bridge {
     @include WHSize();
     position: absolute;
@@ -16,5 +16,13 @@
     top: 20%;
     // Do not exceed during the animation
     overflow: hidden;
+  }
+  .text {
+    position: absolute;
+    @include WHSize();
+    top: 32%;
+    background: url("./../assets/text.png") no-repeat 50% 50%;
+    background-size: cover;
+    mix-blend-mode: overlay;
   }
 }
