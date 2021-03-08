@@ -2,3 +2,10 @@
   width: $with;
   height: $height;
 }
+
+@mixin bannerImages($urlImage, $with: 100%, $height: 100vh) {
+  position: absolute;
+  @include WHSize($with, $height);
+  background: url($urlImage) no-repeat 50% 50%;
+  background-size: cover;
+}

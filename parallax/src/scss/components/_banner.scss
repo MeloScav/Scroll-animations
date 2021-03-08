@@ -3,32 +3,20 @@
   @include WHSize();
   overflow: hidden;
   .background-image-bridge {
-    @include WHSize();
-    position: absolute;
-    background: url("./../assets/goldent_gate.jpg") no-repeat 50% 50%;
-    background-size: cover;
+    @include bannerImages("./../assets/goldent_gate.jpg");
   }
   .man {
-    position: absolute;
-    @include WHSize(80%);
-    background: url("./../assets/upper.png") no-repeat 50% 50%;
-    background-size: cover;
+    @include bannerImages("./../assets/upper.png", 80%);
     top: 20%;
     // Do not exceed during the animation
     overflow: hidden;
   }
   .text {
-    position: absolute;
-    @include WHSize();
+    @include bannerImages("./../assets/text.png");
     top: 32%;
-    background: url("./../assets/text.png") no-repeat 50% 50%;
-    background-size: cover;
     mix-blend-mode: overlay;
   }
   .clouds {
-    position: absolute;
-    @include WHSize();
-    background: url("./../assets/clouds.png") no-repeat 50% 50%;
-    background-size: cover;
+    @include bannerImages("./../assets/clouds.png");
   }
 }
