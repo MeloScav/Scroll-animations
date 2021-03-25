@@ -6,3 +6,20 @@ body {
   height: 100vh;
   font-family: sans-serif;
 }
+
+body {
+  background: url("./../assets/hero.png") no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(17, 150px) / 1fr repeat(10, 150px) 1fr;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
