@@ -1,0 +1,26 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("./../assets/mountain.jpg") no-repeat 50% 50%;
+  background-size: cover;
+
+  h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    font-size: 100px;
+    text-align: center;
+    color: #19348b;
+    background-color: rgba(238, 227, 277, 0.5);
+  }
+
+  .man {
+    margin-top: 40vh;
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+  }
+}
