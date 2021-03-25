@@ -10,5 +10,9 @@
     "build": "parcel build src/index.html"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "scrollmagic": "^2.0.8"
+  }
 }
