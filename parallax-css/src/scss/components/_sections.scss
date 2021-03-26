@@ -1,0 +1,21 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.s1 {
+  @include backgroundImage("./../assets/img2.jpg");
+}
+
+.s2 {
+  @include backgroundImage("./../assets/img3.jpg");
+}
+
+.s3 {
+  @include backgroundImage("./../assets/img4.jpg");
+}
+
+.s4 {
+  @include backgroundImage("./../assets/img5.jpg");
+}
