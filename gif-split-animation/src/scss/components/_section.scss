@@ -1,5 +1,22 @@
 .scene {
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: $off-white;
+
+  .viewer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 480px;
+    background: url("./../assets/gifsplit.png") no-repeat 0 0;
+  }
+}
+
+@for $i from 1 through $frame-count {
+  .viewer.frame#{$i} {
+    background-position: -($i * $offset-val) + px 0;
+  }
 }
