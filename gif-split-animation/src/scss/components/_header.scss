@@ -1,0 +1,13 @@
+.header {
+  height: 50vh;
+  font-size: 50px;
+  background-color: #293744;
+  color: #899eb5;
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
