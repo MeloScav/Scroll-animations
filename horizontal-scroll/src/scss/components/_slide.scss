@@ -1,21 +1,45 @@
-.slide {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
+.container {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+
+  //  IE and Mozzila
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .block-horizontal {
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+    }
+
+    .one {
+      background: #a7e5fd;
+    }
+    .two {
+      background: #cfa7fd;
+    }
+    .three {
+      background: #f68484;
+    }
+    .four {
+      background: #f6a271;
+    }
+  }
 }
 
-.one {
-  background: #a7e5fd;
-}
-.two {
-  background: #cfa7fd;
-}
-.three {
-  background: #f68484;
-}
-.four {
-  background: #f6a271;
+::-webkit-scrollbar {
+  display: none;
 }
