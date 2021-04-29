@@ -1,0 +1,50 @@
+.box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .pinSection {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.image {
+  position: absolute;
+  top: -50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 750px;
+  background-size: contain;
+}
+
+.event1 {
+  background-color: #ec99fe;
+  .image {
+    top: 50%;
+    background-image: url("../assets/img1.jpg");
+  }
+}
+
+.event2 {
+  background-color: #99c1fe;
+  .image {
+    background-image: url("../assets/img2.jpg");
+  }
+}
+
+.event3 {
+  background-color: #fa9b8a;
+  .image {
+    background-image: url("../assets/img3.jpg");
+  }
+}
+
+.event4 {
+  background-color: #b3fe99;
+  .image {
+    background-image: url("../assets/img4.jpg");
+  }
+}
